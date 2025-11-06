@@ -29,7 +29,7 @@ def get_image_analysis(image_data):
     
     # 1. Load the multimodal model
     # We use a "pro" model because image analysis is a complex task
-    model = genai.GenerativeModel('gemini-1.5-pro-latest') 
+    model = genai.GenerativeModel('gemini-2.5-flash') 
     
     # 2. Create the specific prompt for this "Eye"
     prompt = """
@@ -57,7 +57,7 @@ def get_recipe_recommendations(ingredients_list):
     
     # 1. Load the text-only model
     # We use a "flash" model because it's fast and great for creative text
-    model = genai.GenerativeModel('gemini-1.5-flash-latest') 
+    model = genai.GenerativeModel('gemini-2.5-flash') 
     
     # 2. Create the prompt using an f-string to inject the ingredients
     prompt = f"""
