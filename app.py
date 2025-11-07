@@ -36,7 +36,7 @@ def get_image_analysis(image_data):
     You are a pantry expert. Analyze this image of a fridge and list all 
     the edible food items and ingredients you can clearly identify. 
     Ignore non-food items, containers, or brands. 
-    Output a simple, comma-separated list.
+    Output a simple, comma-separated list, along with the quantity available.
     
     Example: eggs, milk, broccoli, cheddar cheese, chicken thighs
     """
@@ -72,6 +72,7 @@ def get_recipe_recommendations(ingredients_list):
     - **Description:** A short, enticing description.
     - **Key Ingredients Used:** (from my list)
     
+    If no ingredients were found, return "No ingredients found"
     Format each dish clearly using Markdown for headings and bold text.
     """
     
